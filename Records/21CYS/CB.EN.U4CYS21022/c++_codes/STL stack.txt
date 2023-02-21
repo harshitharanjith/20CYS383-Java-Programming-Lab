@@ -1,0 +1,29 @@
+STACK STL:
+
+
+#include <iostream>
+#include <stack>
+using namespace std;
+
+void display(stack <int> S)
+{
+    while (!S.empty())
+    {
+        cout << '\t' << S.top();    
+        S.pop();
+    }
+    cout << '\n';
+}
+
+int main(){
+    stack <int> s;
+    s.push(1);
+    s.push(0);
+    s.push(2);
+    s.push(6);
+    cout << "The top element:\n" << s.top();
+    cout << "after removing top element from the stack:\n";
+    s.pop();
+    display(s);
+    return 0;
+}

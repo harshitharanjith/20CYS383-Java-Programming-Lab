@@ -1,0 +1,28 @@
+Declare two lists (say 'a' and 'b') containing elements, 1,2,3 and 4,5,6. Perform the following operations in sequence
+
+(1) concatenation (call this list as 'c')
+
+(2) print the concatenated list 3 times (call this list as 'd')
+
+(3) slice the list 'a' from index 1 to 3.
+
+(4) slice the list 'b' omitting first index and give the second index as 3.
+
+(5) slice the list 'c' omitting second index and give the first index as 3.
+
+(6) print the list 'c' from index 1 to 3.
+
+(7) print the contents of list 'c' omitting both the indices
+
+
+CODE:
+a = [1,2,3]
+b = [4,5,6]
+
+c = a + b
+print("c =",c)
+
+print("d =",(c)*3)
+
+print(a[1:4])
+b[3].update
